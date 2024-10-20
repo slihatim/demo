@@ -1,12 +1,18 @@
 body {
-    display: grid;
-    grid-template-columns: 1fr 300px 1fr ;
-    grid-template-rows: 1fr 130px 1fr;
-    height: 550px;
+    /*removing the default margin and padding of body*/
+    margin: 0;
+    padding: 0;
+    /* -- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
 }
 
 .container {
-    grid-area: 2/2/span 1/span 1;
+    height: 130px;
+    width: 300px;
     border-radius: 10px;
     border: 1px solid rgb(236, 236, 236);
     display: flex;
@@ -24,7 +30,7 @@ body {
     justify-content: space-between;
 }
 
-.item > p:nth-child(2) {
+.number {
     background-color: rgb(74, 125, 254);
     padding: 3px 10px;
     color: white;
@@ -32,13 +38,7 @@ body {
     font-weight:600;
 }
 
-.justfor {
-    /* height: max-content; */
-    grid-area: 1/2/2/3;
-}
-
 p {
     font-family: Roboto, Arial;
     margin: 0px;
-    
 }
